@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Band Store LR</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="models"> <!--É um modelo de estrutura para a exibição das camisas no layout para copiarmos e colocarmos quantas vezes forem precisos dependendo da quantidade de camisas que forem ser exibidas no layout e também um modelo para o carrinho para copiarmos e colocarmos quantas vezes forem precisos dependendo da quantidade de itens que tiver no carrinho-->
+        <!--Essa div 'models' não aparece pois no CSS está 'display: none', pois ela serve somente para deixarmos disponível esta estrutura para o JavaScrpt usar quantas vezes forem preciso-->
+        <div class="camisa-item"> <!--Modelo de exibição das camisas na tela-->
+            <a href="">
+                <div class="camisa-item--img"><img src="" /></div>
+                <div class="camisa-item--add">+</div>
+            </a>
+            <div class="camisa-item--price">R$ --</div>
+            <div class="camisa-item--name">--</div>
+            <div class="camisa-item--desc">--</div>
+        </div>
+        <div class="cart--item"> <!--Modelo de exibição dos itens no carrinho-->
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="menu-openner"><span>0</span>🛒</div>
+    </header>
+    <main>
+        <h1>Band Store LR</h1>
+        <div class="camisa-area"></div>
+    </main>
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">❌</div>
+            <h1>Suas Camisetas</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto (-10%)</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+    <div class="camisaWindowArea">
+        <div class="camisaWindowBody">
+            <div class="camisaInfo--cancelMobileButton">Voltar</div>
+            <div class="camisaBig">
+                <img src="" />
+            </div>
+            <div class="camisaInfo">
+                <h1>--</h1>
+                <div class="camisaInfo--desc">--</div>
+                <div class="camisaInfo--sizearea">
+                    <div class="camisaInfo--sector">Tamanho</div>
+                    <div class="camisaInfo--sizes">
+                        <div data-key="0" class="camisaInfo--size">PEQUENA <span>--</span></div>
+                        <div data-key="1" class="camisaInfo--size">MÉDIA <span>--</span></div>
+                        <div data-key="2" class="camisaInfo--size selected">GRANDE <span>--</span></div>
+                    </div>
+                </div>
+                <div class="camisaInfo--pricearea">
+                    <div class="camisaInfo--sector">Preço</div>
+                    <div class="camisaInfo--price">
+                        <div class="camisaInfo--actualPrice">R$ --</div>
+                        <div class="camisaInfo--qtarea">
+                            <button class="camisaInfo--qtmenos">-</button>
+                            <div class="camisaInfo--qt">1</div>
+                            <button class="camisaInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="camisaInfo--addButton">Adicionar ao carrinho</div>
+                <div class="camisaInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="bandas.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
